@@ -21,7 +21,7 @@ args = {
     'lr' : 0.01,
     'log_interval' : 100,
     'epochs' : 10,
-    'workers' : 8,
+    'workers' : 2,
 }
 
 worker_list = []
@@ -50,7 +50,10 @@ class Net(nn.Module):
         )
     
     def forward(self, x):
+        #print(x)
+        #print(x.shape)
         x = self.conv(x)
+        #print(x)
         x = F.max_pool2d(x,2)
         x = x.view(-1, 64*12*12)
         x = self.fc(x)
@@ -62,8 +65,7 @@ test_data = datasets.MNIST('./data', train=False, transform=transforms.Compose([
                            transforms.ToTensor(),
                            transforms.Normalize((0.1307,), (0.3081,))
                        ]))
-print(test_data.data[0])
-exit()
+
 test_len = test_data.__len__()
 
 train_data = datasets.MNIST('./data', train=True,transform=transforms.Compose([
@@ -81,36 +83,42 @@ while proportion.sum() != 1:
 train_data_proportion = np.around(train_len*proportion)
 test_data_proportion = np.around(test_len*proportion)
 '''
-fix_train = [5000,5000,10000,10000,5000,5000,10000,10000]
-fix_test = [1000,1000,1000,1000,1000,1000,2000,2000]
+fix_train = [30000,30000]
+
 works_train_data = random_split(train_data,fix_train)#random_split(train_data, train_data_proportion)
-works_test_data = random_split(test_data,fix_test)#random_split(test_data, test_data_proportion)
 
 
 federate_data_train = [] 
-federate_data_test = [] 
+
 
 for i in range(args['workers']):
     idx_train = works_train_data[i].indices
-    train_inputs = train_data.data[idx_train]
+    train_inputs = train_data.data.unsqueeze(1).float()[idx_train]
     train_labels = train_data.targets[idx_train]
     federate_data_train.append(sy.BaseDataset(train_inputs, train_labels).send(worker_list[i]))
-    idx_test = works_test_data[i].indices
-    test_inputs = test_data.data[idx_test]
-    test_labels = test_data.targets[idx_test]
-    federate_data_test.append(sy.BaseDataset(test_inputs, test_labels).send(worker_list[i]))
+
 
 federated_train_dataset = sy.FederatedDataset(federate_data_train)
-federated_test_dataset = sy.FederatedDataset(federate_data_test)
 
 federated_train_loader = sy.FederatedDataLoader(federated_train_dataset, shuffle=True, batch_size=args['batch_size'])
-federated_test_loader = sy.FederatedDataLoader(federated_test_dataset, shuffle=False, batch_size=args['test_batch_size'])
 
+test_loader = torch.utils.data.DataLoader(test_data, shuffle=False,batch_size=args['test_batch_size'] )
+
+#print(train_data.data.shape)
+#print(train_data.data.unsqueeze(1).shape)
+#exit()	
 
 # we can look at the data, it is actually pointer tensors
 for images,labels in federated_train_loader:
-    print(images) # batch of images pointers
-    print(labels) # batch of image labels pointers
+    print(images.shape) # batch of images pointers
+    print(labels.shape) # batch of image labels pointers
+    
+    print(len(images)) # len function works on pointers as well
+    print(len(labels)) # we can see both are same, no of images as well as their labels
+    break
+for images,labels in test_loader:
+    print(images.shape) # batch of images pointers
+    print(labels.shape) # batch of image labels pointers
     
     print(len(images)) # len function works on pointers as well
     print(len(labels)) # we can see both are same, no of images as well as their labels
@@ -127,6 +135,7 @@ def train(args, model, device, train_loader, optimizer, epoch):
 
         # the same torch code that we are use to
         data, target = data.to(device), target.to(device)
+        #data, target = data.unsqueeze(1).float().to(device), target.to(device)
         optimizer.zero_grad()
         output = model(data)
 
@@ -168,10 +177,13 @@ def test(model, device, test_loader):
     with torch.no_grad():
         for data, target in test_loader:
             data, target = data.to(device), target.to(device)
+            #data, target = data.unsqueeze(1).float().to(device), target.to(device)
+            #print(data.shape, target.shape)
             output = model(data)
 
             # add losses together
             test_loss += F.nll_loss(output, target, reduction='sum').item() 
+            #test_loss += F.mse_loss(output, target, reduction='sum').item()
 
             # get the index of the max probability class
             pred = output.argmax(dim=1, keepdim=True)  
@@ -190,6 +202,6 @@ logging.info("Starting training !!")
 
 for epoch in range(1, args['epochs'] + 1):
         train(args, model, device, federated_train_loader, optimizer, epoch)
-        test(model, device, federated_test_loader)
+        test(model, device, test_loader)
     
 # thats all we need to do XD
