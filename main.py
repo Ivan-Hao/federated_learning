@@ -8,7 +8,7 @@ from torch.utils.data.dataset import random_split
 import numpy as np
 import syft as sy
 import copy
- 
+
 hook = sy.TorchHook(torch) # hook PyTorch to PySyft
 
 args = {
@@ -86,7 +86,7 @@ federate_data_train = []
 
 for i in range(args['workers']):
     idx_train = works_train_data[i].indices
-    train_inputs = train_data.data[idx_train].unsqueeze(1).float64()
+    train_inputs = train_data.data[idx_train].unsqueeze(1).float()
     train_labels = train_data.targets[idx_train]
     federate_data_train.append(sy.BaseDataset(train_inputs, train_labels).send(worker_list[i]))
 
@@ -97,24 +97,15 @@ federated_train_loader = sy.FederatedDataLoader(federated_train_dataset, shuffle
 
 test_loader = torch.utils.data.DataLoader(test_data, shuffle=True ,batch_size=args['test_batch_size'] )
 
-def FedAvg(w):
-    w_avg = copy.deepcopy(w[0])
-    for k in w_avg.keys():
-        for i in range(1, len(w)):
-            w_avg[k] += w[i][k]
-        w_avg[k] = torch.div(w_avg[k], len(w))
-    return w_avg
 
 
-def train(args, model, device, train_loader, optimizer, epoch, fedmodel, fedopt):
+def train(args, model, device, train_loader, optimizer, epochd):
     model.train()
 
-    global_weight = model.state_dict() # ---------------------------------------------------------
-    local_weight = []
     for batch_idx, (data, target) in enumerate(train_loader):
 
         # send the model to the remote location #
-        model = model.send(data.location)
+        model.send(data.location)
 
         # the same torch code that we are use to
         data, target = data.to(device), target.to(device)
@@ -131,9 +122,7 @@ def train(args, model, device, train_loader, optimizer, epoch, fedmodel, fedopt)
 
         # get back the updated model #
         model.get()
-        
-        w = model.state_dict()
-        local_weight.append(copy.deepcopy(w))
+
 
         if batch_idx % args['log_interval'] == 0:
 
@@ -148,8 +137,6 @@ def train(args, model, device, train_loader, optimizer, epoch, fedmodel, fedopt)
                     loss.item()
                 )
             )
-        w_avg = FedAvg(local_weight)    
-        global_weight.load_state_dict(w_avg)
 
 def test(model, device, test_loader):
     model.eval()
@@ -177,12 +164,10 @@ def test(model, device, test_loader):
 model = Net().to(device)
 optimizer = optim.SGD(model.parameters(), lr=args['lr'])
 
-fedmodel = Net().to(device)
-fedopt = optim.SGD(fedmodel.parameters(), lr=args['lr'])
 
 
 for epoch in range(1, args['epochs'] + 1):
-        train(args, model, device, federated_train_loader, optimizer, epoch, fedmodel, fedopt)
+        train(args, model, device, federated_train_loader, optimizer, epoch)
         test(model, device, test_loader)
 
 

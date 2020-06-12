@@ -1,138 +1,250 @@
-torch.Size([64, 1, 28, 28])
-torch.Size([64])
-64
-64
-torch.Size([1000, 1, 28, 28])
-torch.Size([1000])
-1000
-1000
-Train Epoch: 1 [0/60032 (0%)]	Loss: 6.995063
-Train Epoch: 1 [6400/60032 (11%)]	Loss: 0.258534
-Train Epoch: 1 [12800/60032 (21%)]	Loss: 0.326946
-Train Epoch: 1 [19200/60032 (32%)]	Loss: 0.059258
-Train Epoch: 1 [25600/60032 (43%)]	Loss: 0.263289
-Train Epoch: 1 [32000/60032 (53%)]	Loss: 0.162175
-Train Epoch: 1 [38400/60032 (64%)]	Loss: 0.067150
-Train Epoch: 1 [44800/60032 (75%)]	Loss: 0.165522
-Train Epoch: 1 [51200/60032 (85%)]	Loss: 0.153275
-Train Epoch: 1 [57600/60032 (96%)]	Loss: 0.031478
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 2.320413	Worker_id: 0
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.394373	Worker_id: 0
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.345900	Worker_id: 0
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.072602	Worker_id: 0
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.299143	Worker_id: 0
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.332274	Worker_id: 0
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.234610	Worker_id: 0
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.110317	Worker_id: 0
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.136589	Worker_id: 0
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.073283	Worker_id: 0
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.067865	Worker_id: 0
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.089058	Worker_id: 0
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.155217	Worker_id: 0
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.073327	Worker_id: 0
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.140702	Worker_id: 0
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 2.299138	Worker_id: 1
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.509772	Worker_id: 1
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.425202	Worker_id: 1
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.222092	Worker_id: 1
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.187175	Worker_id: 1
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.170235	Worker_id: 1
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.089789	Worker_id: 1
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.134355	Worker_id: 1
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.102666	Worker_id: 1
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.152475	Worker_id: 1
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.087467	Worker_id: 1
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.168958	Worker_id: 1
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.112033	Worker_id: 1
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.076910	Worker_id: 1
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.062336	Worker_id: 1
+Round   0,global average loss 0.528
 
-Test set: Average loss: 2.2141, Accuracy: 4631/10000 (46%)
+Test set: Average loss: 0.0677, Accuracy: 9805/10000 (98%)
 
-Train Epoch: 2 [0/60032 (0%)]	Loss: 0.022579
-Train Epoch: 2 [6400/60032 (11%)]	Loss: 0.073683
-Train Epoch: 2 [12800/60032 (21%)]	Loss: 0.091198
-Train Epoch: 2 [19200/60032 (32%)]	Loss: 0.080888
-Train Epoch: 2 [25600/60032 (43%)]	Loss: 0.006458
-Train Epoch: 2 [32000/60032 (53%)]	Loss: 0.061190
-Train Epoch: 2 [38400/60032 (64%)]	Loss: 0.021451
-Train Epoch: 2 [44800/60032 (75%)]	Loss: 0.042087
-Train Epoch: 2 [51200/60032 (85%)]	Loss: 0.030789
-Train Epoch: 2 [57600/60032 (96%)]	Loss: 0.129005
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.077182	Worker_id: 1
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.127012	Worker_id: 1
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.373571	Worker_id: 1
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.084922	Worker_id: 1
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.095194	Worker_id: 1
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.033344	Worker_id: 1
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.043361	Worker_id: 1
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.064240	Worker_id: 1
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.055660	Worker_id: 1
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.074183	Worker_id: 1
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.054665	Worker_id: 1
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.040061	Worker_id: 1
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.072337	Worker_id: 1
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.034125	Worker_id: 1
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.067393	Worker_id: 1
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.018133	Worker_id: 0
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.097047	Worker_id: 0
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.126994	Worker_id: 0
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.037086	Worker_id: 0
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.055992	Worker_id: 0
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.059376	Worker_id: 0
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.059171	Worker_id: 0
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.024438	Worker_id: 0
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.021774	Worker_id: 0
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.109963	Worker_id: 0
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.053274	Worker_id: 0
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.016946	Worker_id: 0
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.031698	Worker_id: 0
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.034006	Worker_id: 0
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.040349	Worker_id: 0
+Round   1,global average loss 0.064
 
-Test set: Average loss: 2.1939, Accuracy: 6460/10000 (65%)
+Test set: Average loss: 0.0409, Accuracy: 9872/10000 (99%)
 
-Train Epoch: 3 [0/60032 (0%)]	Loss: 0.088986
-Train Epoch: 3 [6400/60032 (11%)]	Loss: 0.003563
-Train Epoch: 3 [12800/60032 (21%)]	Loss: 0.162397
-Train Epoch: 3 [19200/60032 (32%)]	Loss: 0.109412
-Train Epoch: 3 [25600/60032 (43%)]	Loss: 0.059802
-Train Epoch: 3 [32000/60032 (53%)]	Loss: 0.091977
-Train Epoch: 3 [38400/60032 (64%)]	Loss: 0.012899
-Train Epoch: 3 [44800/60032 (75%)]	Loss: 0.024159
-Train Epoch: 3 [51200/60032 (85%)]	Loss: 0.099030
-Train Epoch: 3 [57600/60032 (96%)]	Loss: 0.056271
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.074307	Worker_id: 0
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.047219	Worker_id: 0
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.029913	Worker_id: 0
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.083189	Worker_id: 0
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.033361	Worker_id: 0
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.116554	Worker_id: 0
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.030290	Worker_id: 0
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.041312	Worker_id: 0
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.058629	Worker_id: 0
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.030053	Worker_id: 0
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.010784	Worker_id: 0
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.072942	Worker_id: 0
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.017169	Worker_id: 0
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.084446	Worker_id: 0
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.061260	Worker_id: 0
+Round   2,global average loss 0.057
 
-Test set: Average loss: 2.1924, Accuracy: 5971/10000 (60%)
+Test set: Average loss: 0.0392, Accuracy: 9878/10000 (99%)
 
-Train Epoch: 4 [0/60032 (0%)]	Loss: 0.003318
-Train Epoch: 4 [6400/60032 (11%)]	Loss: 0.005850
-Train Epoch: 4 [12800/60032 (21%)]	Loss: 0.037287
-Train Epoch: 4 [19200/60032 (32%)]	Loss: 0.009438
-Train Epoch: 4 [25600/60032 (43%)]	Loss: 0.030138
-Train Epoch: 4 [32000/60032 (53%)]	Loss: 0.019491
-Train Epoch: 4 [38400/60032 (64%)]	Loss: 0.009731
-Train Epoch: 4 [44800/60032 (75%)]	Loss: 0.018177
-Train Epoch: 4 [51200/60032 (85%)]	Loss: 0.010668
-Train Epoch: 4 [57600/60032 (96%)]	Loss: 0.062102
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.127332	Worker_id: 1
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.034532	Worker_id: 1
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.024083	Worker_id: 1
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.043655	Worker_id: 1
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.008786	Worker_id: 1
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.020894	Worker_id: 1
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.010353	Worker_id: 1
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.039278	Worker_id: 1
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.015750	Worker_id: 1
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.025452	Worker_id: 1
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.017656	Worker_id: 1
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.026094	Worker_id: 1
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.047591	Worker_id: 1
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.049256	Worker_id: 1
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.008215	Worker_id: 1
+Round   3,global average loss 0.041
 
-Test set: Average loss: 2.1569, Accuracy: 7157/10000 (72%)
+Test set: Average loss: 0.0366, Accuracy: 9882/10000 (99%)
 
-Train Epoch: 5 [0/60032 (0%)]	Loss: 0.004626
-Train Epoch: 5 [6400/60032 (11%)]	Loss: 0.021167
-Train Epoch: 5 [12800/60032 (21%)]	Loss: 0.029866
-Train Epoch: 5 [19200/60032 (32%)]	Loss: 0.010207
-Train Epoch: 5 [25600/60032 (43%)]	Loss: 0.032455
-Train Epoch: 5 [32000/60032 (53%)]	Loss: 0.005889
-Train Epoch: 5 [38400/60032 (64%)]	Loss: 0.022251
-Train Epoch: 5 [44800/60032 (75%)]	Loss: 0.006818
-Train Epoch: 5 [51200/60032 (85%)]	Loss: 0.003708
-Train Epoch: 5 [57600/60032 (96%)]	Loss: 0.008214
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.069606	Worker_id: 0
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.002155	Worker_id: 0
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.003746	Worker_id: 0
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.019373	Worker_id: 0
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.079325	Worker_id: 0
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.011876	Worker_id: 0
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.009331	Worker_id: 0
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.134659	Worker_id: 0
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.021228	Worker_id: 0
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.025543	Worker_id: 0
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.008400	Worker_id: 0
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.088552	Worker_id: 0
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.053248	Worker_id: 0
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.033039	Worker_id: 0
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.018360	Worker_id: 0
+Round   4,global average loss 0.036
 
-Test set: Average loss: 2.1491, Accuracy: 8160/10000 (82%)
+Test set: Average loss: 0.0285, Accuracy: 9903/10000 (99%)
 
-Train Epoch: 6 [0/60032 (0%)]	Loss: 0.004774
-Train Epoch: 6 [6400/60032 (11%)]	Loss: 0.015520
-Train Epoch: 6 [12800/60032 (21%)]	Loss: 0.007064
-Train Epoch: 6 [19200/60032 (32%)]	Loss: 0.003827
-Train Epoch: 6 [25600/60032 (43%)]	Loss: 0.031139
-Train Epoch: 6 [32000/60032 (53%)]	Loss: 0.026690
-Train Epoch: 6 [38400/60032 (64%)]	Loss: 0.014247
-Train Epoch: 6 [44800/60032 (75%)]	Loss: 0.009194
-Train Epoch: 6 [51200/60032 (85%)]	Loss: 0.049257
-Train Epoch: 6 [57600/60032 (96%)]	Loss: 0.025924
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.030127	Worker_id: 1
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.007917	Worker_id: 1
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.009581	Worker_id: 1
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.012154	Worker_id: 1
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.002368	Worker_id: 1
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.012243	Worker_id: 1
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.005498	Worker_id: 1
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.010972	Worker_id: 1
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.059431	Worker_id: 1
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.002845	Worker_id: 1
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.023507	Worker_id: 1
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.005711	Worker_id: 1
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.026610	Worker_id: 1
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.001834	Worker_id: 1
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.029396	Worker_id: 1
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.027200	Worker_id: 0
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.030655	Worker_id: 0
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.020878	Worker_id: 0
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.007886	Worker_id: 0
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.021178	Worker_id: 0
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.002629	Worker_id: 0
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.018072	Worker_id: 0
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.005616	Worker_id: 0
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.014981	Worker_id: 0
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.023040	Worker_id: 0
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.000936	Worker_id: 0
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.029943	Worker_id: 0
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.002224	Worker_id: 0
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.085517	Worker_id: 0
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.048181	Worker_id: 0
+Round   5,global average loss 0.017
 
-Test set: Average loss: 2.1375, Accuracy: 8041/10000 (80%)
+Test set: Average loss: 0.0252, Accuracy: 9916/10000 (99%)
 
-Train Epoch: 7 [0/60032 (0%)]	Loss: 0.002497
-Train Epoch: 7 [6400/60032 (11%)]	Loss: 0.001263
-Train Epoch: 7 [12800/60032 (21%)]	Loss: 0.015294
-Train Epoch: 7 [19200/60032 (32%)]	Loss: 0.008729
-Train Epoch: 7 [25600/60032 (43%)]	Loss: 0.002936
-Train Epoch: 7 [32000/60032 (53%)]	Loss: 0.009524
-Train Epoch: 7 [38400/60032 (64%)]	Loss: 0.004214
-Train Epoch: 7 [44800/60032 (75%)]	Loss: 0.048361
-Train Epoch: 7 [51200/60032 (85%)]	Loss: 0.000831
-Train Epoch: 7 [57600/60032 (96%)]	Loss: 0.056473
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.016918	Worker_id: 0
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.031301	Worker_id: 0
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.007262	Worker_id: 0
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.030828	Worker_id: 0
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.006943	Worker_id: 0
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.028888	Worker_id: 0
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.012893	Worker_id: 0
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.003352	Worker_id: 0
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.021085	Worker_id: 0
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.004710	Worker_id: 0
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.002149	Worker_id: 0
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.013151	Worker_id: 0
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.002413	Worker_id: 0
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.032615	Worker_id: 0
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.014817	Worker_id: 0
+Round   6,global average loss 0.016
 
-Test set: Average loss: 2.1153, Accuracy: 8422/10000 (84%)
+Test set: Average loss: 0.0246, Accuracy: 9918/10000 (99%)
 
-Train Epoch: 8 [0/60032 (0%)]	Loss: 0.000181
-Train Epoch: 8 [6400/60032 (11%)]	Loss: 0.001950
-Train Epoch: 8 [12800/60032 (21%)]	Loss: 0.000653
-Train Epoch: 8 [19200/60032 (32%)]	Loss: 0.026520
-Train Epoch: 8 [25600/60032 (43%)]	Loss: 0.009024
-Train Epoch: 8 [32000/60032 (53%)]	Loss: 0.004746
-Train Epoch: 8 [38400/60032 (64%)]	Loss: 0.000451
-Train Epoch: 8 [44800/60032 (75%)]	Loss: 0.000722
-Train Epoch: 8 [51200/60032 (85%)]	Loss: 0.000186
-Train Epoch: 8 [57600/60032 (96%)]	Loss: 0.001623
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.002046	Worker_id: 0
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.014326	Worker_id: 0
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.027653	Worker_id: 0
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.011745	Worker_id: 0
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.041592	Worker_id: 0
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.017044	Worker_id: 0
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.007530	Worker_id: 0
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.004210	Worker_id: 0
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.001505	Worker_id: 0
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.003243	Worker_id: 0
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.001473	Worker_id: 0
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.001648	Worker_id: 0
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.000259	Worker_id: 0
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.056111	Worker_id: 0
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.002796	Worker_id: 0
+Round   7,global average loss 0.009
 
-Test set: Average loss: 2.0971, Accuracy: 9084/10000 (91%)
+Test set: Average loss: 0.0283, Accuracy: 9909/10000 (99%)
 
-Train Epoch: 9 [0/60032 (0%)]	Loss: 0.050328
-Train Epoch: 9 [6400/60032 (11%)]	Loss: 0.001448
-Train Epoch: 9 [12800/60032 (21%)]	Loss: 0.000518
-Train Epoch: 9 [19200/60032 (32%)]	Loss: 0.047020
-Train Epoch: 9 [25600/60032 (43%)]	Loss: 0.000218
-Train Epoch: 9 [32000/60032 (53%)]	Loss: 0.002844
-Train Epoch: 9 [38400/60032 (64%)]	Loss: 0.002733
-Train Epoch: 9 [44800/60032 (75%)]	Loss: 0.000162
-Train Epoch: 9 [51200/60032 (85%)]	Loss: 0.001261
-Train Epoch: 9 [57600/60032 (96%)]	Loss: 0.118949
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.002747	Worker_id: 1
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.171084	Worker_id: 1
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.002391	Worker_id: 1
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.089871	Worker_id: 1
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.059621	Worker_id: 1
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.035407	Worker_id: 1
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.030904	Worker_id: 1
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.001832	Worker_id: 1
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.289510	Worker_id: 1
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.014244	Worker_id: 1
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.003505	Worker_id: 1
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.001364	Worker_id: 1
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.000411	Worker_id: 1
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.005432	Worker_id: 1
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.030628	Worker_id: 1
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.003562	Worker_id: 0
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.000782	Worker_id: 0
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.034347	Worker_id: 0
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.001309	Worker_id: 0
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.008104	Worker_id: 0
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.001445	Worker_id: 0
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.001400	Worker_id: 0
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.001569	Worker_id: 0
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.001397	Worker_id: 0
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.019236	Worker_id: 0
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.000492	Worker_id: 0
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.009820	Worker_id: 0
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.003877	Worker_id: 0
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.000935	Worker_id: 0
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.001476	Worker_id: 0
+Round   8,global average loss 0.020
 
-Test set: Average loss: 2.0923, Accuracy: 8814/10000 (88%)
+Test set: Average loss: 0.0255, Accuracy: 9912/10000 (99%)
 
-Train Epoch: 10 [0/60032 (0%)]	Loss: 0.000436
-Train Epoch: 10 [6400/60032 (11%)]	Loss: 0.000078
-Train Epoch: 10 [12800/60032 (21%)]	Loss: 0.001657
-Train Epoch: 10 [19200/60032 (32%)]	Loss: 0.007334
-Train Epoch: 10 [25600/60032 (43%)]	Loss: 0.001375
-Train Epoch: 10 [32000/60032 (53%)]	Loss: 0.001586
-Train Epoch: 10 [38400/60032 (64%)]	Loss: 0.001161
-Train Epoch: 10 [44800/60032 (75%)]	Loss: 0.003808
-Train Epoch: 10 [51200/60032 (85%)]	Loss: 0.004121
-Train Epoch: 10 [57600/60032 (96%)]	Loss: 0.000844
+Local Update Epoch: 0 [0/30000 (0%)]	Loss: 0.000723	Worker_id: 1
+Local Update Epoch: 0 [6400/30000 (21%)]	Loss: 0.001479	Worker_id: 1
+Local Update Epoch: 0 [12800/30000 (43%)]	Loss: 0.004989	Worker_id: 1
+Local Update Epoch: 0 [19200/30000 (64%)]	Loss: 0.018814	Worker_id: 1
+Local Update Epoch: 0 [25600/30000 (85%)]	Loss: 0.003512	Worker_id: 1
+Local Update Epoch: 1 [0/30000 (0%)]	Loss: 0.002127	Worker_id: 1
+Local Update Epoch: 1 [6400/30000 (21%)]	Loss: 0.009339	Worker_id: 1
+Local Update Epoch: 1 [12800/30000 (43%)]	Loss: 0.058659	Worker_id: 1
+Local Update Epoch: 1 [19200/30000 (64%)]	Loss: 0.002847	Worker_id: 1
+Local Update Epoch: 1 [25600/30000 (85%)]	Loss: 0.006316	Worker_id: 1
+Local Update Epoch: 2 [0/30000 (0%)]	Loss: 0.044696	Worker_id: 1
+Local Update Epoch: 2 [6400/30000 (21%)]	Loss: 0.002443	Worker_id: 1
+Local Update Epoch: 2 [12800/30000 (43%)]	Loss: 0.002348	Worker_id: 1
+Local Update Epoch: 2 [19200/30000 (64%)]	Loss: 0.000189	Worker_id: 1
+Local Update Epoch: 2 [25600/30000 (85%)]	Loss: 0.013877	Worker_id: 1
+Round   9,global average loss 0.013
 
-Test set: Average loss: 2.0864, Accuracy: 8461/10000 (85%)
+Test set: Average loss: 0.0307, Accuracy: 9890/10000 (99%)
 
