@@ -54,7 +54,7 @@ def federated_average(weights):
 def local_update(dataloader, model, worker_id):
     model.train()
 
-    optimizer = torch.optim.SGD(model.parameters(), lr=args['lr'], momentum=0.5)
+    optimizer = optim.SGD(model.parameters(), lr=args['lr'], momentum=0.5)
 
     epoch_loss = []
     for l_epoch in range(args['local_epochs']):
@@ -123,7 +123,8 @@ if __name__ == '__main__':
         avg_loss = np.average(local_loss_list)
         global_train_loss.append(avg_loss)
         print('Round {:3d},global average loss {:.3f}'.format(g_epoch, avg_loss))
-
+        
+        # eval -------------------------------------------
         global_model.eval()
         test_loss = 0
         correct = 0
