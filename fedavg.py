@@ -18,13 +18,13 @@ args = {
     'test_batch_size':1000,
     'lr':0.01,
     'local_update_interval':100,
-    'global_epochs':10,
-    'local_epochs':3,
+    'global_epochs':20,
+    'local_epochs':1,
     'workers':2,
 
 }
 
-
+'''
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
@@ -42,6 +42,31 @@ class Net(nn.Module):
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         return F.log_softmax(x, dim=1)
+'''
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.conv1 = nn.Conv2d(1, 32, 3, 1)
+        self.conv2 = nn.Conv2d(32, 64, 3, 1)
+        self.dropout1 = nn.Dropout2d(0.25)
+        self.dropout2 = nn.Dropout2d(0.5)
+        self.fc1 = nn.Linear(9216, 128)
+        self.fc2 = nn.Linear(128, 10)
+
+    def forward(self, x):
+        x = self.conv1(x)
+        x = F.relu(x)
+        x = self.conv2(x)
+        x = F.relu(x)
+        x = F.max_pool2d(x, 2)
+        x = self.dropout1(x)
+        x = torch.flatten(x, 1)
+        x = self.fc1(x)
+        x = F.relu(x)
+        x = self.dropout2(x)
+        x = self.fc2(x)
+        output = F.log_softmax(x, dim=1)
+        return output
 
 def federated_average(weights):
     w_avg = copy.deepcopy(weights[0])
@@ -54,7 +79,7 @@ def federated_average(weights):
 def local_update(dataloader, model, worker_id):
     model.train()
 
-    optimizer = optim.SGD(model.parameters(), lr=args['lr'], momentum=0.5)
+    optimizer = optim.SGD(model.parameters(), lr=args['lr'])
 
     epoch_loss = []
     for l_epoch in range(args['local_epochs']):
@@ -90,7 +115,7 @@ if __name__ == '__main__':
     test_data = datasets.MNIST('./data', train=False, download=True, transform=transform)
     test_dataloader = DataLoader(test_data, batch_size=args['test_batch_size'], shuffle=True)
 
-    train_proportion = [30000,30000]
+    train_proportion = [30000]*2
     workers_data = random_split(train_data, train_proportion)
     workers_dataloader = []
     for i in range(args['workers']):
@@ -98,7 +123,7 @@ if __name__ == '__main__':
 
     global_train_loss = []
     global_test_loss = []
-
+    global_test_accuracy = []
 
     for g_epoch in range(args['global_epochs']):
         global_model.train()
@@ -123,7 +148,7 @@ if __name__ == '__main__':
         avg_loss = np.average(local_loss_list)
         global_train_loss.append(avg_loss)
         print('Round {:3d},global average loss {:.3f}'.format(g_epoch, avg_loss))
-        
+
         # eval -------------------------------------------
         global_model.eval()
         test_loss = 0
@@ -143,8 +168,12 @@ if __name__ == '__main__':
             test_loss, correct, len(test_dataloader.dataset),
             100. * correct / len(test_dataloader.dataset)))
 
+        global_test_accuracy.append(100. * correct / len(test_dataloader.dataset))
+        global_test_loss.append(test_loss)
 
-
+    print(global_test_accuracy)
+    print(global_test_loss)
+    print(global_train_loss)
 
 
 
