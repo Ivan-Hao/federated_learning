@@ -1,15 +1,15 @@
-import copy
 import numpy as np
+import copy
 import argparse
-# ---------------------------------------------
+#------------------------------------------------
 import torch
 import torch.nn.functional as F
-import torch.nn as nn
-import torch.optim as optim
+from torch import nn
+from torch import optim
 from torch.utils.data import TensorDataset, DataLoader
 from torchvision import datasets, transforms
 from torch.utils.data.dataset import random_split
-# ----------------------------------------------
+#---------------------------------------------------
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--workers', help='the number of workers', default=4 ,type=int)
@@ -19,8 +19,6 @@ parser.add_argument('--testbsize', help='test batch size', default= 1000, type=i
 parser.add_argument('--gepochs', help='global train epochs', default= 20, type=int)
 parser.add_argument('--lepochs', help='local train epochs', default= 1, type=int)    
 arg = parser.parse_args()
-
-device ='cuda' if torch.cuda.is_available() else 'cpu'
 
 args = {
     'batch_size': arg.bsize,
@@ -32,6 +30,8 @@ args = {
     'workers': arg.workers,
     'train_proportion' : [60000//arg.workers] * arg.workers
 }
+
+device ='cuda' if torch.cuda.is_available() else 'cpu'
 
 class Net(nn.Module):
     def __init__(self):
@@ -47,44 +47,13 @@ class Net(nn.Module):
         output = F.log_softmax(x, dim=1)
         return output
 
-def federated_average(weights):
+def gradinet_average(weights):
     w_avg = copy.deepcopy(weights[0])
     for k in w_avg.keys():
         for i in range(1, len(weights)):
             w_avg[k] += weights[i][k]
         w_avg[k] = torch.div(w_avg[k], len(weights))
     return w_avg
-
-def local_update(dataloader, model, worker_id):
-    model.train()
-
-    optimizer = optim.SGD(model.parameters(), lr=args['lr'])
-
-    epoch_loss = []
-    for l_epoch in range(args['local_epochs']):
-        batch_loss = []
-        for batch_idx, (data, target) in enumerate(dataloader):
-            data, target = data.to(device), target.to(device)
-
-            model.zero_grad()
-            output = model(data)
-
-            loss = F.nll_loss(output, target)
-            loss.backward()
-            print(model.fc1.weight.grad.shape)
-
-            optimizer.step()
-            if batch_idx % args['local_update_interval'] == 0:
-                print('Local Update Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\tWorker_id: {}'.format(
-                    l_epoch, batch_idx * len(data), len(dataloader.dataset),
-                    100. * batch_idx / len(dataloader), loss.item(), worker_id))
-                batch_loss.append(loss.item())
-
-            epoch_loss.append(np.average(batch_loss))
-
-    return model.state_dict(), np.average(epoch_loss)
-
-
 
 
 if __name__ == '__main__':
@@ -115,7 +84,7 @@ if __name__ == '__main__':
 
         for idx in local_idx:
             local_model = copy.deepcopy(global_model).to(device)
-            local_weight, local_loss = local_update(workers_dataloader[idx], local_model, idx)
+            local_gradiett, local_loss = local_update(workers_dataloader[idx], local_model, idx)
 
             local_weight_list.append(local_weight)
             local_loss_list.append(local_loss)
@@ -153,6 +122,3 @@ if __name__ == '__main__':
     print(global_test_accuracy)
     print(global_test_loss)
     print(global_train_loss)
-
-
-

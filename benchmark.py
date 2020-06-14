@@ -1,5 +1,6 @@
 import copy
 import numpy as np
+import argparse
 # ---------------------------------------------
 import torch
 import torch.nn.functional as F
@@ -11,57 +12,34 @@ from torch.utils.data.dataset import random_split
 # ----------------------------------------------
 
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--lr', help='learning rate', default= 0.01, type=float)
+parser.add_argument('--bsize', help='batch size', default= 64, type=int)
+parser.add_argument('--testbsize', help='test batch size', default= 1000, type=int)
+parser.add_argument('--epochs', help='train epochs', default= 20, type=int) 
+arg = parser.parse_args()
+
 device ='cuda' if torch.cuda.is_available() else 'cpu'
 
 args = {
-    'batch_size':64,
-    'test_batch_size':1000,
-    'lr':0.01,
-    'log_interval':100,
-    'epochs':10,
+    'batch_size': arg.bsize,
+    'test_batch_size': arg.testbsize,
+    'lr': arg.lr,
+    'log_interval': 100,
+    'epochs': arg.epochs,
 }
 
-'''
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.conv1 = nn.Conv2d(1, 20, 5, 1)
-        self.conv2 = nn.Conv2d(20, 50, 5, 1)
-        self.fc1 = nn.Linear(4*4*50, 500)
-        self.fc2 = nn.Linear(500, 10)
-
-    def forward(self, x):
-        x = F.relu(self.conv1(x))
-        x = F.max_pool2d(x, 2, 2)
-        x = F.relu(self.conv2(x))
-        x = F.max_pool2d(x, 2, 2)
-        x = x.view(-1, 4*4*50)
-        x = F.relu(self.fc1(x))
-        x = self.fc2(x)
-        return F.log_softmax(x, dim=1)
-'''
-class Net(nn.Module):
-    def __init__(self):
-        super(Net, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, 3, 1)
-        self.conv2 = nn.Conv2d(32, 64, 3, 1)
-        self.dropout1 = nn.Dropout2d(0.25)
-        self.dropout2 = nn.Dropout2d(0.5)
-        self.fc1 = nn.Linear(9216, 128)
-        self.fc2 = nn.Linear(128, 10)
+        self.conv1 = nn.Conv2d(1, 2, 5, 1)
+        self.fc1 = nn.Linear(288, 10)
 
     def forward(self, x):
         x = self.conv1(x)
-        x = F.relu(x)
-        x = self.conv2(x)
-        x = F.relu(x)
         x = F.max_pool2d(x, 2)
-        x = self.dropout1(x)
         x = torch.flatten(x, 1)
         x = self.fc1(x)
-        x = F.relu(x)
-        x = self.dropout2(x)
-        x = self.fc2(x)
         output = F.log_softmax(x, dim=1)
         return output
 
@@ -76,9 +54,13 @@ if __name__ == '__main__':
 
     optimizer = optim.SGD(model.parameters(), lr=args['lr'])
 
+    test_loss_list = []
+    test_accuracy_list = []
+    train_loss_list = [] 
+
     for epoch in range(args['epochs']):
         model.train()
-
+        batch_loss = []
         for batch_idx, (data, target) in enumerate(train_dataloader):
             data, target = data.to(device), target.to(device)
             optimizer.zero_grad()
@@ -90,6 +72,8 @@ if __name__ == '__main__':
                 print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
                     epoch, batch_idx * len(data), len(train_dataloader.dataset),
                     100. * batch_idx / len(train_dataloader), loss.item()))
+                batch_loss.append(loss.item())
+        train_loss_list.append(np.average(batch_loss))
 
         model.eval()
         test_loss = 0
@@ -104,7 +88,14 @@ if __name__ == '__main__':
                 correct += pred.eq(target.view_as(pred)).sum().item()
 
         test_loss /= len(test_dataloader.dataset)
+        test_loss_list.append(test_loss)
 
         print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
             test_loss, correct, len(test_dataloader.dataset),
             100. * correct / len(test_dataloader.dataset)))
+        
+        test_accuracy_list.append(100. * correct / len(test_dataloader.dataset))
+    
+    print(test_loss_list)
+    print(test_accuracy_list)
+    print(train_loss_list)
