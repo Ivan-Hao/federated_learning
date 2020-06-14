@@ -1,7 +1,7 @@
 import numpy as np
-import syft as sy
 import copy
 import argparse
+import syft as sy
 #------------------------------------------------
 import torch
 import torch.nn.functional as F
@@ -11,7 +11,6 @@ from torch.utils.data import TensorDataset, DataLoader
 from torchvision import datasets, transforms
 from torch.utils.data.dataset import random_split
 #---------------------------------------------------
-
 hook = sy.TorchHook(torch) # hook PyTorch to PySyft
 
 parser = argparse.ArgumentParser()
@@ -20,16 +19,18 @@ parser.add_argument('--lr', help='learning rate', default= 0.01, type=float)
 parser.add_argument('--bsize', help='batch size', default= 64, type=int)
 parser.add_argument('--testbsize', help='test batch size', default= 1000, type=int)
 parser.add_argument('--gepochs', help='global train epochs', default= 20, type=int)
-parser.add_argument('--lepochs', help='local train epochs', default= 1, type=int)    
+parser.add_argument('--lepochs', help='local train epochs', default= 1, type=int)
+parser.add_argument('--lbepochs', help='local train batch time per epoch', default= 5, type=int)        
 arg = parser.parse_args()
 
 args = {
     'batch_size': arg.bsize,
     'test_batch_size': arg.testbsize,
     'lr': arg.lr,
-    'local_update_interval': 100,
+    'local_update_interval': 10,
     'global_epochs': arg.gepochs,
     'local_epochs': arg.lepochs,
+    'local_batch_times' : 10,
     'workers': arg.workers,
     'train_proportion' : [60000//arg.workers] * arg.workers
 }
@@ -54,85 +55,92 @@ class Net(nn.Module):
         output = F.log_softmax(x, dim=1)
         return output
 
-transform = transforms.Compose([transforms.ToTensor(),transforms.Normalize((0.1307,), (0.3081,))])
-test_data = datasets.MNIST('./data', train=False, transform = transform)
-train_data = datasets.MNIST('./data', train=True, transform = transform)
-
-
-train_data.data = train_data.data.unsqueeze(1).float()
-workers_data = random_split(train_data, args['train_proportion'])
-
-federated_data = []
-
-for i in range(args['workers']):
-    idx_train = workers_data[i].indices
-    train_inputs = train_data.data[idx_train]
-    train_targets = train_data.targets[idx_train]
-    federated_data.append(sy.BaseDataset(train_inputs, train_targets).send(worker_list[i]))
-
-federated_dataset = sy.FederatedDataset(federated_data)
-federated_dataloader = sy.FederatedDataLoader(federated_dataset, shuffle=True, batch_size=args['batch_size'])
-
-#federated_dataloader = sy.FederatedDataLoader(train_data.federate(worker_list), batch_size=args['batch_size'], shuffle=True)
-
-test_loader = DataLoader(test_data, shuffle=True, batch_size=args['test_batch_size'] )
-
-def train(model, train_loader, optimizer, epoch):
+def local_update(dataloader, model, optimizer, worker_id):
 
     model.train()
-    for batch_idx, (data, target) in enumerate(train_loader):
-        print(data.location)
-
-        model.send(data.location)
-        data, target = data.to(device), target.to(device)
-        optimizer.zero_grad()
-        output = model(data)
-
-        loss = F.nll_loss(output, target)
-        loss.backward()
-        optimizer.step()
-
-        model.get()
-
-        if batch_idx % args['local_update_interval'] == 0:
-            loss = loss.get()
-            print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
-                    epoch,
-                    batch_idx * args['batch_size'],
-                    len(train_loader) * args['batch_size'],
-                    100. * batch_idx / len(train_loader),
-                    loss.item()
-                )
-            )
-
-def test(model, test_loader):
-
-    model.eval()
-    test_loss = 0
-    correct = 0
-    with torch.no_grad():
-        for data, target in test_loader:
-            data, target = data.to(device), target.to(device)
+    model.send(worker_list[worker_id])
+    
+    epoch_loss = []
+    for l_epoch in range(args['local_epochs']):
+        batch_loss = []
+        for batch_idx, (data, target) in enumerate(dataloader):
+            data, target = data.send(worker_list[worker_id]).to(device), target.send(worker_list[worker_id]).to(device)
+            model.zero_grad()
 
             output = model(data)
-            test_loss += F.nll_loss(output, target, reduction='sum').item()
-            pred = output.argmax(dim=1, keepdim=True)
-            correct += pred.eq(target.view_as(pred)).sum().item()
+            loss = F.nll_loss(output, target)
+            loss.backward()
 
-    test_loss /= len(test_loader.dataset)
+            optimizer.step()
+            if batch_idx % args['local_update_interval'] == 0:
+                loss = loss.get()
+                print('Local Update Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\tWorker_id: {}'.format(
+                    l_epoch, batch_idx * len(data), len(dataloader.dataset),
+                    100. * batch_idx / len(dataloader), loss.item(), worker_id))
+                batch_loss.append(loss.item())
+                model.get()
+                break
 
-    print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
-        test_loss, correct, len(test_loader.dataset),
-        100. * correct / len(test_loader.dataset)))
+        epoch_loss.append(np.average(batch_loss))
+
+    return np.average(epoch_loss)
 
 
 if __name__ == '__main__':
-    model = Net().to(device)
-    optimizer = optim.SGD(model.parameters(), lr=args['lr'])
-    epoch_loss = []
+    global_model = Net().to(device)
+    optimizer = optim.SGD(global_model.parameters(), lr=args['lr'])
 
-    for epoch in range(args['global_epochs']):
-        train(model, federated_dataloader, optimizer, epoch)
-        test(model, test_loader)
+    transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])
+    train_data = datasets.MNIST('./data', train=True, download=True, transform=transform)
+    test_data = datasets.MNIST('./data', train=False, download=True, transform=transform)
+    test_dataloader = DataLoader(test_data, batch_size=args['test_batch_size'], shuffle=True)
 
+    workers_data = random_split(train_data, args['train_proportion'])
+    workers_dataloader = []
+    for i in range(args['workers']):
+        workers_dataloader.append(DataLoader(workers_data[i], batch_size=args['batch_size'], shuffle=True))
 
+    global_train_loss = []
+    global_test_loss = []
+    global_test_accuracy = []
+
+    for g_epoch in range(args['global_epochs']):
+
+        concurrent_workers = np.random.randint(1,args['workers']+1)
+        local_idx = np.random.choice(np.arange(args['workers']), concurrent_workers, replace=False)
+        local_loss_list = []
+
+        for i in range(args['local_batch_times']):
+            for idx in local_idx:
+                local_loss = local_update(workers_dataloader[idx], global_model, optimizer, idx)
+                local_loss_list.append(local_loss)
+
+        avg_loss = np.average(local_loss_list)
+        global_train_loss.append(avg_loss)
+        print('Round {:3d},global average loss {:.3f}'.format(g_epoch, avg_loss))
+
+        # eval -------------------------------------------
+        global_model.eval()
+        test_loss = 0
+        correct = 0
+        with torch.no_grad():
+            for data, target in test_dataloader:
+                data, target = data.to(device), target.to(device)
+                output = global_model(data)
+
+                test_loss += F.nll_loss(output, target, reduction='sum').item() # sum up batch loss
+                pred = output.argmax(1, keepdim=True) # get the index of the max log-probability
+                correct += pred.eq(target.view_as(pred)).sum().item()
+
+        test_loss /= len(test_dataloader.dataset)
+
+        print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
+            test_loss, correct, len(test_dataloader.dataset),
+            100. * correct / len(test_dataloader.dataset)))
+
+        global_test_accuracy.append(100. * correct / len(test_dataloader.dataset))
+        global_test_loss.append(test_loss)
+
+    print(global_test_accuracy)
+    print(global_test_loss)
+    print(global_train_loss)

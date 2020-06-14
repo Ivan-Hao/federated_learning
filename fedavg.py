@@ -71,7 +71,6 @@ def local_update(dataloader, model, worker_id):
 
             loss = F.nll_loss(output, target)
             loss.backward()
-            print(model.fc1.weight.grad.shape)
 
             optimizer.step()
             if batch_idx % args['local_update_interval'] == 0:
@@ -80,11 +79,9 @@ def local_update(dataloader, model, worker_id):
                     100. * batch_idx / len(dataloader), loss.item(), worker_id))
                 batch_loss.append(loss.item())
 
-            epoch_loss.append(np.average(batch_loss))
+        epoch_loss.append(np.average(batch_loss))
 
     return model.state_dict(), np.average(epoch_loss)
-
-
 
 
 if __name__ == '__main__':
