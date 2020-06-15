@@ -1,0 +1,85 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Round   0,global average loss 2.301
+Accuracy of the network on the 10000 test images: 14 %
+Round   1,global average loss 2.291
+Accuracy of the network on the 10000 test images: 15 %
+Round   2,global average loss 2.186
+Accuracy of the network on the 10000 test images: 25 %
+Round   3,global average loss 1.972
+Accuracy of the network on the 10000 test images: 30 %
+Round   4,global average loss 1.841
+Accuracy of the network on the 10000 test images: 35 %
+Round   5,global average loss 1.741
+Accuracy of the network on the 10000 test images: 38 %
+Round   6,global average loss 1.698
+Accuracy of the network on the 10000 test images: 38 %
+Round   7,global average loss 1.616
+Accuracy of the network on the 10000 test images: 40 %
+Round   8,global average loss 1.599
+Accuracy of the network on the 10000 test images: 42 %
+Round   9,global average loss 1.611
+Accuracy of the network on the 10000 test images: 43 %
+Round  10,global average loss 1.525
+Accuracy of the network on the 10000 test images: 44 %
+Round  11,global average loss 1.547
+Accuracy of the network on the 10000 test images: 43 %
+Round  12,global average loss 1.488
+Accuracy of the network on the 10000 test images: 47 %
+Round  13,global average loss 1.463
+Accuracy of the network on the 10000 test images: 46 %
+Round  14,global average loss 1.406
+Accuracy of the network on the 10000 test images: 49 %
+Round  15,global average loss 1.433
+Accuracy of the network on the 10000 test images: 48 %
+Round  16,global average loss 1.328
+Accuracy of the network on the 10000 test images: 51 %
+Round  17,global average loss 1.312
+Accuracy of the network on the 10000 test images: 52 %
+Round  18,global average loss 1.278
+Accuracy of the network on the 10000 test images: 52 %
+Round  19,global average loss 1.294
+Accuracy of the network on the 10000 test images: 52 %
+Round  20,global average loss 1.262
+Accuracy of the network on the 10000 test images: 52 %
+Round  21,global average loss 1.238
+Accuracy of the network on the 10000 test images: 53 %
+Round  22,global average loss 1.212
+Accuracy of the network on the 10000 test images: 55 %
+Round  23,global average loss 1.150
+Accuracy of the network on the 10000 test images: 55 %
+Round  24,global average loss 1.189
+Accuracy of the network on the 10000 test images: 56 %
+Round  25,global average loss 1.125
+Accuracy of the network on the 10000 test images: 56 %
+Round  26,global average loss 1.222
+Accuracy of the network on the 10000 test images: 57 %
+Round  27,global average loss 1.125
+Accuracy of the network on the 10000 test images: 56 %
+Round  28,global average loss 1.100
+Accuracy of the network on the 10000 test images: 57 %
+Round  29,global average loss 1.068
+Accuracy of the network on the 10000 test images: 57 %
+Round  30,global average loss 0.966
+Accuracy of the network on the 10000 test images: 57 %
+Round  31,global average loss 1.065
+Accuracy of the network on the 10000 test images: 57 %
+Round  32,global average loss 1.032
+Accuracy of the network on the 10000 test images: 57 %
+Round  33,global average loss 0.988
+Accuracy of the network on the 10000 test images: 58 %
+Round  34,global average loss 1.131
+Accuracy of the network on the 10000 test images: 59 %
+Round  35,global average loss 0.981
+Accuracy of the network on the 10000 test images: 59 %
+Round  36,global average loss 1.062
+Accuracy of the network on the 10000 test images: 58 %
+Round  37,global average loss 1.041
+Accuracy of the network on the 10000 test images: 60 %
+Round  38,global average loss 0.992
+Accuracy of the network on the 10000 test images: 60 %
+Round  39,global average loss 0.969
+Accuracy of the network on the 10000 test images: 59 %
+[14.03, 15.32, 25.49, 30.45, 35.63, 38.38, 38.5, 40.97, 42.71, 43.24, 44.09, 43.81, 47.22, 46.51, 49.81, 48.81, 51.28, 52.4, 52.56, 52.78, 52.72, 53.38, 55.68, 55.66, 56.86, 56.31, 57.37, 56.92, 57.37, 57.94, 57.69, 57.92, 57.44, 58.84, 59.06, 59.89, 58.3, 60.84, 60.25, 59.48]
+[2.2971981048583983, 2.275971794128418, 2.063098335266113, 1.9081312537193298, 1.7616091966629028, 1.7040852904319763, 1.6832548022270202, 1.602558398246765, 1.568365466594696, 1.5504241347312928, 1.5299412965774537, 1.5260232090950012, 1.4556151628494263, 1.4697599053382873, 1.3975396156311035, 1.4214143872261047, 1.3574015617370605, 1.343613040447235, 1.3293259501457215, 1.3326761364936828, 1.3218264937400819, 1.3006393551826476, 1.2558275938034058, 1.2646169304847716, 1.2325538873672486, 1.2402493715286256, 1.2137047052383423, 1.2260793089866637, 1.2274667978286744, 1.207086479663849, 1.246173131465912, 1.1970637798309327, 1.214046585559845, 1.177172565460205, 1.154679572582245, 1.1433775424957275, 1.1741771340370177, 1.122974443435669, 1.1458492040634156, 1.1802367448806763]
+[2.300853663530105, 2.2908088121658716, 2.1858691496726794, 1.9717565981241374, 1.8413167886244945, 1.741456219783196, 1.6980777382850647, 1.616386361611195, 1.5985301641317515, 1.611152551113031, 1.525346013215872, 1.5469103241578126, 1.4879495318119342, 1.4633333667730675, 1.4060609252789082, 1.432937191082881, 1.3281160084865031, 1.3123950469188201, 1.278492570687563, 1.2941009448124812, 1.26248380732842, 1.2375960575464444, 1.2119783808787663, 1.1503338424059062, 1.1893590214924934, 1.1251371747408159, 1.2217158384812183, 1.1251778461230106, 1.099965513134614, 1.0680421506747222, 0.965740034977595, 1.0650491809997804, 1.0320166101058323, 0.9878750500770715, 1.131179432074229, 0.9811259890213991, 1.0623229451668568, 1.0410810517959106, 0.9917211368297919, 0.9693175187477698]

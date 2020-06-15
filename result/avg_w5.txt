@@ -62,344 +62,484 @@ Round   3,global average loss 2.243
 Accuracy of the network on the 10000 test images: 20 %
 Local Update Epoch: 0 [0/10000 (0%)]	Loss: 2.245265	Worker_id: 3
 Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 2.189487	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.216466	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 2.004105	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.216496	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 2.004152	Worker_id: 3
 Local Update Epoch: 0 [0/10000 (0%)]	Loss: 2.212744	Worker_id: 4
 Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 2.248513	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.031491	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.917005	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.031482	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.916995	Worker_id: 4
 Local Update Epoch: 0 [0/10000 (0%)]	Loss: 2.241179	Worker_id: 1
 Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 2.310507	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.014496	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 2.032421	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.014495	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 2.032434	Worker_id: 1
 Local Update Epoch: 0 [0/10000 (0%)]	Loss: 2.181041	Worker_id: 0
 Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 2.208875	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.098370	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.989234	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.098364	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.989244	Worker_id: 0
 Local Update Epoch: 0 [0/10000 (0%)]	Loss: 2.250500	Worker_id: 2
 Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 2.211762	Worker_id: 2
 Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.171665	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 2.019297	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 2.019310	Worker_id: 2
 Round   4,global average loss 2.140
 Accuracy of the network on the 10000 test images: 26 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 2.207057	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.888149	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.045794	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.891297	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 2.207083	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.888343	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.045631	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.892454	Worker_id: 2
 Round   5,global average loss 2.008
 Accuracy of the network on the 10000 test images: 28 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 2.259650	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.794279	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.291651	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 2.014179	Worker_id: 2
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.906376	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.842716	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.977957	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.917980	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 2.259075	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.794556	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.292341	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 2.012691	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.906872	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.842783	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.978522	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.919173	Worker_id: 4
 Round   6,global average loss 2.001
 Accuracy of the network on the 10000 test images: 30 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.944101	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.756026	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.239386	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.782328	Worker_id: 4
-Round   7,global average loss 1.930
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.945805	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.753595	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 2.239991	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.783350	Worker_id: 4
+Round   7,global average loss 1.931
 Accuracy of the network on the 10000 test images: 32 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.720082	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 2.058817	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.552480	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.786420	Worker_id: 0
-Round   8,global average loss 1.779
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.718600	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 2.060161	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.554978	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.786501	Worker_id: 0
+Round   8,global average loss 1.780
 Accuracy of the network on the 10000 test images: 33 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.771042	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.981433	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.764518	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.692811	Worker_id: 2
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.625783	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.660723	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.958092	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.572420	Worker_id: 1
-Round   9,global average loss 1.753
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.770362	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.981859	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.761886	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.692360	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.623335	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.658245	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.959724	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.571805	Worker_id: 1
+Round   9,global average loss 1.752
 Accuracy of the network on the 10000 test images: 37 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.673235	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.626622	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.780294	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.712016	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.902893	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.743717	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.757119	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.627406	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.895637	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.971146	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.626976	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.791742	Worker_id: 0
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.785359	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.835257	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.711966	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.809870	Worker_id: 2
-Round  10,global average loss 1.766
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.674780	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.630579	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.778669	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.714162	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.904763	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.743944	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.756478	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.631007	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.894848	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.969514	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.629201	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.789626	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.780925	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.844159	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.712827	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.817502	Worker_id: 2
+Round  10,global average loss 1.767
 Accuracy of the network on the 10000 test images: 39 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.606836	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.834449	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.622680	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.744348	Worker_id: 4
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.358478	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.750060	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.535158	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.619749	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.851924	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.509756	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.748483	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.795643	Worker_id: 0
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.578520	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.952443	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.557843	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.604426	Worker_id: 2
-Round  11,global average loss 1.667
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.607281	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.832475	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.626170	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.744147	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.361965	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.747925	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.535120	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.612025	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.851268	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.510481	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.749174	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.793366	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.580119	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.954664	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.550541	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.602443	Worker_id: 2
+Round  11,global average loss 1.666
 Accuracy of the network on the 10000 test images: 41 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.672264	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.629358	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.640087	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.421637	Worker_id: 0
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.858474	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.395835	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.789437	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.471143	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.672440	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.629551	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.641785	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.422826	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.859128	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.394515	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.793268	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.468181	Worker_id: 1
 Round  12,global average loss 1.610
 Accuracy of the network on the 10000 test images: 41 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.528306	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.732318	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.459105	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.803161	Worker_id: 0
-Round  13,global average loss 1.631
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.531807	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.720567	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.461901	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.799186	Worker_id: 0
+Round  13,global average loss 1.628
 Accuracy of the network on the 10000 test images: 42 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.742732	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.576577	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.289784	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.671640	Worker_id: 0
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.538059	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.411100	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.397577	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.962111	Worker_id: 2
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.490523	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.687925	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.345986	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.428724	Worker_id: 4
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.600067	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.780058	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.464214	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.601835	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.837253	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.229030	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.554052	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.705512	Worker_id: 3
-Round  14,global average loss 1.566
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.744079	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.571744	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.289004	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.668855	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.538397	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.413805	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.388446	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.950931	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.493728	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.680756	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.346351	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.435757	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.596413	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.777111	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.460373	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.595239	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.840676	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.231917	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.555482	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.708000	Worker_id: 3
+Round  14,global average loss 1.564
 Accuracy of the network on the 10000 test images: 44 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.722900	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.732287	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.567870	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.533461	Worker_id: 4
-Round  15,global average loss 1.639
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.725215	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.734314	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.570703	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.533900	Worker_id: 4
+Round  15,global average loss 1.641
 Accuracy of the network on the 10000 test images: 43 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.649133	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.566864	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.583935	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.624063	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.482909	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.298813	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.710962	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.534951	Worker_id: 4
-Round  16,global average loss 1.556
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.642905	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.562050	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.583138	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.628395	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.489045	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.303790	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.697773	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.544987	Worker_id: 4
+Round  16,global average loss 1.557
 Accuracy of the network on the 10000 test images: 45 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.477769	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.518416	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.641482	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.692610	Worker_id: 4
-Round  17,global average loss 1.583
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.478623	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.521257	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.658169	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.693476	Worker_id: 4
+Round  17,global average loss 1.588
 Accuracy of the network on the 10000 test images: 45 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.380772	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.478015	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.241994	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.597356	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.406784	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.516224	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.693263	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.429101	Worker_id: 2
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.472443	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.274978	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.400339	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.849185	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.432838	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.346207	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.653243	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.164623	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.385241	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.474425	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.243418	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.608308	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.410475	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.526121	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.693657	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.418362	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.464745	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.286340	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.394366	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.844192	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.426686	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.352083	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.652373	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.164960	Worker_id: 4
 Round  18,global average loss 1.459
 Accuracy of the network on the 10000 test images: 47 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.509335	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.499920	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.430352	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.733646	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.393128	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.625746	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.524932	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.512422	Worker_id: 4
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.500232	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.402095	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.385539	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.169292	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.204117	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.513888	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.350016	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.048222	Worker_id: 0
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.386910	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.463102	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.135230	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.355000	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.509036	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.510312	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.422078	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.739675	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.392004	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.614887	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.525577	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.512353	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.512595	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.414466	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.381772	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.163650	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.207297	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.520405	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.335481	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.045098	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.383252	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.457992	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.137902	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.347246	Worker_id: 2
 Round  19,global average loss 1.407
 Accuracy of the network on the 10000 test images: 48 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.704446	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.609401	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.105822	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.070987	Worker_id: 1
-Round  20,global average loss 1.373
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.713126	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.609297	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.102062	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.064119	Worker_id: 1
+Round  20,global average loss 1.372
 Accuracy of the network on the 10000 test images: 48 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.617103	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.346000	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.231728	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.697914	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.720418	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.667624	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.292811	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.406895	Worker_id: 2
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.577064	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.323992	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.305358	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.287159	Worker_id: 0
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.655334	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.343410	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.271946	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.470652	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.665047	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.303851	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.442918	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.586166	Worker_id: 4
-Round  21,global average loss 1.461
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.624713	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.349694	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.237816	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.683652	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.724310	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.674075	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.288131	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.418507	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.574425	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.322971	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.307581	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.290736	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.651541	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.359768	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.261667	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.471642	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.673591	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.301002	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.454747	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.600778	Worker_id: 4
+Round  21,global average loss 1.464
 Accuracy of the network on the 10000 test images: 49 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.600801	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.250809	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.534008	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.586777	Worker_id: 4
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.308689	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.113925	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.331920	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.422051	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.099779	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.506852	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.277684	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.538205	Worker_id: 2
-Round  22,global average loss 1.381
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.601151	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.247002	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.518588	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.582155	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.314098	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.111405	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.347491	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.421359	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.104542	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.506621	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.289365	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.536048	Worker_id: 2
+Round  22,global average loss 1.382
 Accuracy of the network on the 10000 test images: 50 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.337386	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.557642	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.576681	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.522308	Worker_id: 2
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.377040	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.302536	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.426022	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.107538	Worker_id: 0
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.529395	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.344270	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.418933	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.604658	Worker_id: 4
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.191553	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.353864	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.546073	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.314616	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.258170	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.535345	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.332107	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.392616	Worker_id: 1
-Round  23,global average loss 1.401
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.339350	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.554116	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.570727	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.514555	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.371046	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.279890	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.416040	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.107891	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.531955	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.344558	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.417886	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.605194	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.188890	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.344303	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.543263	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.316954	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.260402	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.539978	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.337816	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.386833	Worker_id: 1
+Round  23,global average loss 1.399
 Accuracy of the network on the 10000 test images: 51 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.234320	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.473834	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 0.989210	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.099307	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.294763	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.524223	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.413149	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.270377	Worker_id: 2
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.378339	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.608102	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.279441	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.185142	Worker_id: 3
-Round  24,global average loss 1.313
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.242148	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.469166	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 0.992180	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.089272	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.289813	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.547631	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.416529	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.263067	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.380778	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.598362	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.288914	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.169056	Worker_id: 3
+Round  24,global average loss 1.312
 Accuracy of the network on the 10000 test images: 51 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 0.998322	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.126770	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.562526	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.210769	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.330403	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.422254	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.388691	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.216505	Worker_id: 2
-Round  25,global average loss 1.282
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 0.994769	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.125150	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.567265	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.211756	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.316636	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.417529	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.388408	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.215594	Worker_id: 2
+Round  25,global average loss 1.280
 Accuracy of the network on the 10000 test images: 51 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.463528	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.352718	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.341364	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.113871	Worker_id: 4
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.259253	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.443669	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.130210	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.400181	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.409359	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.523297	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.576345	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.637155	Worker_id: 0
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.301832	Worker_id: 2
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.324426	Worker_id: 2
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.465713	Worker_id: 2
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.282206	Worker_id: 2
-Round  26,global average loss 1.377
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.461123	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.358507	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.355239	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.109591	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.264493	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.437536	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.145840	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.404853	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.413281	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.509894	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.570944	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.630921	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.305050	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.334167	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.475471	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.285777	Worker_id: 2
+Round  26,global average loss 1.379
 Accuracy of the network on the 10000 test images: 53 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.141141	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.066176	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.392955	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.374107	Worker_id: 3
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.042135	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.246048	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.292037	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.445912	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.259057	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.268204	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.252395	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.461616	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.141050	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.062044	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.400848	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.382533	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.035448	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.235493	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.296122	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.440349	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.253441	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.276185	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.243370	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.471060	Worker_id: 0
 Round  27,global average loss 1.270
 Accuracy of the network on the 10000 test images: 52 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.389787	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.555196	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.522637	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.065263	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.166178	Worker_id: 4
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.058861	Worker_id: 4
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.233351	Worker_id: 4
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.500744	Worker_id: 4
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.441436	Worker_id: 0
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.133389	Worker_id: 0
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.347680	Worker_id: 0
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.011458	Worker_id: 0
-Round  28,global average loss 1.285
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.396770	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.550268	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.534951	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.072117	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.163715	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.052828	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.231275	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.516063	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.434413	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.141873	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.343034	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.014579	Worker_id: 0
+Round  28,global average loss 1.288
 Accuracy of the network on the 10000 test images: 53 %
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 0.990527	Worker_id: 1
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 0.966586	Worker_id: 1
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.782148	Worker_id: 1
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.435481	Worker_id: 1
-Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.324045	Worker_id: 3
-Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.242962	Worker_id: 3
-Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.278658	Worker_id: 3
-Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 0.990213	Worker_id: 3
-Round  29,global average loss 1.251
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 0.996928	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 0.967752	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.781797	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.444105	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.316340	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.246437	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.282999	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 0.985759	Worker_id: 3
+Round  29,global average loss 1.253
 Accuracy of the network on the 10000 test images: 53 %
-[11.09, 13.52, 19.0, 20.35, 26.24, 28.2, 30.79, 32.69, 33.81, 37.59, 39.08, 41.07, 41.61, 42.65, 44.19, 43.69, 45.5, 45.55, 47.5, 48.44, 48.71, 49.76, 50.39, 51.19, 51.95, 51.78, 53.36, 52.42, 53.27, 53.3]
-[0.002301133155822754, 0.002296972465515137, 0.0022759557008743287, 0.0021900997161865233, 0.0020613343954086305, 0.0019704283833503725, 0.0019084418654441834, 0.0018465045094490052, 0.0017986165642738343, 0.00171607745885849, 0.001656484806537628, 0.0016145432114601135, 0.0015844474196434022, 0.001577019250392914, 0.0015255185604095458, 0.0015322277545928955, 0.0014893129467964173, 0.0014943085551261902, 0.0014461317539215088, 0.001421707785129547, 0.0014279884099960326, 0.0013901272535324096, 0.0013859511137008667, 0.0013615949392318727, 0.0013503552079200745, 0.0013416172742843628, 0.001318003535270691, 0.0013205366969108582, 0.0012962871313095092, 0.001297158658504486]
-[2.3013292998075485, 2.301479160785675, 2.2901448607444763, 2.243188500404358, 2.1397211074829103, 2.0080744922161102, 2.0005983710289, 1.9304600059986115, 1.7794500291347504, 1.7533528953790665, 1.7657035067677498, 1.6669246554374695, 1.6097793281078339, 1.6307223439216614, 1.5657378375530242, 1.639129638671875, 1.5564538091421127, 1.5825691521167755, 1.4585853070020676, 1.4071561515331268, 1.3726637065410614, 1.4606694459915162, 1.3809582988421123, 1.401437622308731, 1.3125171462694805, 1.2820299714803696, 1.376570351421833, 1.2701487044493358, 1.285498360792796, 1.2513274103403091]
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.183104	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 0.975256	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.362174	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.543767	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.291441	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.328430	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.444296	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.357280	Worker_id: 0
+Round  30,global average loss 1.311
+Accuracy of the network on the 10000 test images: 53 %
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.288660	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.395467	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.220937	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.193838	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.284941	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.319125	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.197644	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.245431	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.345755	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.088917	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.314894	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.090075	Worker_id: 1
+Round  31,global average loss 1.249
+Accuracy of the network on the 10000 test images: 55 %
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.152473	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.188828	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.601461	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.195004	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.587596	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.291402	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.457392	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.633787	Worker_id: 2
+Round  32,global average loss 1.388
+Accuracy of the network on the 10000 test images: 55 %
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 0.972112	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.173987	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.267600	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.757091	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.132825	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.073443	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.511413	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.127787	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.245561	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.175447	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.163507	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.419491	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.205101	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.301889	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.350492	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.200318	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.251692	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.136681	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.357174	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.441648	Worker_id: 4
+Round  33,global average loss 1.263
+Accuracy of the network on the 10000 test images: 55 %
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.040478	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 0.992617	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.065530	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.225820	Worker_id: 2
+Round  34,global average loss 1.081
+Accuracy of the network on the 10000 test images: 53 %
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.332144	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.598063	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.314543	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.130907	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.416002	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.208172	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.187029	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.244646	Worker_id: 4
+Round  35,global average loss 1.304
+Accuracy of the network on the 10000 test images: 56 %
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 0.961943	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.164446	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.060232	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.341702	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 0.989792	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.238129	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.198030	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.262477	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.340186	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 0.989457	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.408302	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 0.975584	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.331591	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.221055	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.552842	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.214640	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.163399	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.462772	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.051086	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.514616	Worker_id: 0
+Round  36,global average loss 1.222
+Accuracy of the network on the 10000 test images: 57 %
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.180282	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.199668	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.534785	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.200542	Worker_id: 2
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.315520	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.008124	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.670243	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.217605	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.069545	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.130451	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.034617	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.175624	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.516370	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.231715	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.421633	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.208746	Worker_id: 4
+Round  37,global average loss 1.257
+Accuracy of the network on the 10000 test images: 57 %
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 0.966041	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.188667	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.339282	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.282154	Worker_id: 0
+Round  38,global average loss 1.194
+Accuracy of the network on the 10000 test images: 54 %
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.885267	Worker_id: 1
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.178827	Worker_id: 1
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.517007	Worker_id: 1
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.222559	Worker_id: 1
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.093696	Worker_id: 0
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.032908	Worker_id: 0
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.156715	Worker_id: 0
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.199563	Worker_id: 0
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.147817	Worker_id: 3
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.070376	Worker_id: 3
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 0.877637	Worker_id: 3
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.060954	Worker_id: 3
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.232750	Worker_id: 4
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.097982	Worker_id: 4
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.058613	Worker_id: 4
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.050569	Worker_id: 4
+Local Update Epoch: 0 [0/10000 (0%)]	Loss: 1.044286	Worker_id: 2
+Local Update Epoch: 0 [3200/10000 (32%)]	Loss: 1.244738	Worker_id: 2
+Local Update Epoch: 0 [6400/10000 (64%)]	Loss: 1.319779	Worker_id: 2
+Local Update Epoch: 0 [9600/10000 (96%)]	Loss: 1.068178	Worker_id: 2
+Round  39,global average loss 1.178
+Accuracy of the network on the 10000 test images: 58 %
+[11.09, 13.52, 19.0, 20.35, 26.25, 28.27, 30.7, 32.75, 33.82, 37.38, 39.27, 41.11, 41.75, 42.69, 44.16, 43.77, 45.64, 45.57, 47.47, 48.47, 48.73, 49.92, 50.36, 51.21, 51.89, 51.77, 53.31, 52.45, 53.13, 53.31, 53.82, 55.41, 55.62, 55.91, 53.88, 56.44, 57.24, 57.36, 54.93, 58.06]
+[2.301133155822754, 2.296972465515137, 2.2759557008743285, 2.1900997161865234, 2.061341953277588, 1.9703418612480164, 1.9087096929550171, 1.846544861793518, 1.7987089991569518, 1.7160374641418457, 1.6563919544219972, 1.6142914652824403, 1.5835088968276978, 1.5778683304786683, 1.5252142548561096, 1.5311848521232605, 1.4897011041641235, 1.497024369239807, 1.4458750367164612, 1.4213359832763672, 1.4265932202339173, 1.389264214038849, 1.386991035938263, 1.3611459136009216, 1.350380790233612, 1.3419705510139466, 1.3186604619026183, 1.3206195831298828, 1.2966245651245116, 1.2969245314598083, 1.296797227859497, 1.2632126212120056, 1.248050057888031, 1.2351744771003723, 1.2829618573188781, 1.232088029384613, 1.205354106426239, 1.207469093799591, 1.2596819281578064, 1.1824531078338623]
+[2.3013292998075485, 2.301479160785675, 2.2901448607444763, 2.243188500404358, 2.1397254884243013, 2.0083777606487274, 2.0007515251636505, 1.9306850731372833, 1.780059665441513, 1.7524469643831253, 1.7670615166425705, 1.666197769343853, 1.6102117449045181, 1.628365308046341, 1.5643531203269958, 1.6410329341888428, 1.5565104186534882, 1.5878811478614807, 1.4591094180941582, 1.4066538870334626, 1.3721510469913483, 1.463567304611206, 1.3816523551940918, 1.3985823690891266, 1.3122428854306538, 1.2796383202075958, 1.3789179027080536, 1.2698287069797516, 1.2876571615537007, 1.2527645751833916, 1.3107183873653412, 1.2488069832324982, 1.3884928226470947, 1.2632630258798598, 1.0811110734939575, 1.3039382100105286, 1.2221140950918197, 1.2572169825434685, 1.1940360218286514, 1.178011029958725]
