@@ -16,7 +16,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--lr', help='learning rate', default= 0.001, type=float)
 parser.add_argument('--bsize', help='batch size', default= 32, type=int)
 parser.add_argument('--testbsize', help='test batch size', default= 1000, type=int)
-parser.add_argument('--epochs', help='train epochs', default= 30, type=int) 
+parser.add_argument('--epochs', help='train epochs', default= 40, type=int) 
 arg = parser.parse_args()
 
 device ='cuda' if torch.cuda.is_available() else 'cpu'
@@ -93,7 +93,7 @@ if __name__ == '__main__':
                 _, predicted = torch.max(outputs.data, 1)
                 total += target.size(0)
                 correct += (predicted == target).sum().item()
-            test_loss /= len(test_dataloader.dataset)
+            test_loss /= len(test_dataloader)
 
         print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
         

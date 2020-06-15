@@ -16,7 +16,7 @@ parser.add_argument('--workers', help='the number of workers', default=4 ,type=i
 parser.add_argument('--lr', help='learning rate', default= 0.001, type=float)
 parser.add_argument('--bsize', help='batch size', default= 32, type=int)
 parser.add_argument('--testbsize', help='test batch size', default= 1000, type=int)
-parser.add_argument('--gepochs', help='global train epochs', default= 30, type=int)
+parser.add_argument('--gepochs', help='global train epochs', default= 40, type=int)
 parser.add_argument('--lepochs', help='local train epochs', default= 1, type=int)
 parser.add_argument('--lbtimes', help='local update batch times', default= 4, type=int)
 parser.add_argument('--iid', help='i.i.d dataset ', default= 1, type=int)      
@@ -154,7 +154,7 @@ if __name__ == '__main__':
                 _, predicted = torch.max(outputs.data, 1)
                 total += target.size(0)
                 correct += (predicted == target).sum().item()
-            test_loss /= len(test_dataloader.dataset)
+            test_loss /= len(test_dataloader)
                 
         print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
         global_test_accuracy.append((100 * correct / total))
