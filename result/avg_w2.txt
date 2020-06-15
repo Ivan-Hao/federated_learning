@@ -1,0 +1,34 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Local Update Epoch: 0 [0/25000 (0%)]	Loss: 2.307015	Worker_id: 0
+Local Update Epoch: 0 [1600/25000 (6%)]	Loss: 2.309611	Worker_id: 0
+Local Update Epoch: 0 [3200/25000 (13%)]	Loss: 2.322357	Worker_id: 0
+Local Update Epoch: 0 [4800/25000 (19%)]	Loss: 2.300790	Worker_id: 0
+Local Update Epoch: 0 [6400/25000 (26%)]	Loss: 2.305583	Worker_id: 0
+Local Update Epoch: 0 [8000/25000 (32%)]	Loss: 2.299265	Worker_id: 0
+Local Update Epoch: 0 [9600/25000 (38%)]	Loss: 2.306104	Worker_id: 0
+Local Update Epoch: 0 [11200/25000 (45%)]	Loss: 2.301882	Worker_id: 0
+Local Update Epoch: 0 [12800/25000 (51%)]	Loss: 2.301510	Worker_id: 0
+Local Update Epoch: 0 [14400/25000 (58%)]	Loss: 2.271375	Worker_id: 0
+Local Update Epoch: 0 [16000/25000 (64%)]	Loss: 2.236894	Worker_id: 0
+Local Update Epoch: 0 [17600/25000 (70%)]	Loss: 2.155241	Worker_id: 0
+Local Update Epoch: 0 [19200/25000 (77%)]	Loss: 2.101163	Worker_id: 0
+Local Update Epoch: 0 [20800/25000 (83%)]	Loss: 2.093540	Worker_id: 0
+Local Update Epoch: 0 [22400/25000 (90%)]	Loss: 1.871021	Worker_id: 0
+Local Update Epoch: 0 [24000/25000 (96%)]	Loss: 2.105192	Worker_id: 0
+Local Update Epoch: 0 [0/25000 (0%)]	Loss: 2.303294	Worker_id: 1
+Local Update Epoch: 0 [1600/25000 (6%)]	Loss: 2.311130	Worker_id: 1
+Local Update Epoch: 0 [3200/25000 (13%)]	Loss: 2.291296	Worker_id: 1
+Local Update Epoch: 0 [4800/25000 (19%)]	Loss: 2.295982	Worker_id: 1
+Local Update Epoch: 0 [6400/25000 (26%)]	Loss: 2.301781	Worker_id: 1
+Local Update Epoch: 0 [8000/25000 (32%)]	Loss: 2.304491	Worker_id: 1
+Local Update Epoch: 0 [9600/25000 (38%)]	Loss: 2.289213	Worker_id: 1
+Local Update Epoch: 0 [11200/25000 (45%)]	Loss: 2.299935	Worker_id: 1
+Local Update Epoch: 0 [12800/25000 (51%)]	Loss: 2.285758	Worker_id: 1
+Local Update Epoch: 0 [14400/25000 (58%)]	Loss: 2.248794	Worker_id: 1
+Local Update Epoch: 0 [16000/25000 (64%)]	Loss: 2.284035	Worker_id: 1
+Local Update Epoch: 0 [17600/25000 (70%)]	Loss: 2.192834	Worker_id: 1
+Local Update Epoch: 0 [19200/25000 (77%)]	Loss: 2.294988	Worker_id: 1
+Local Update Epoch: 0 [20800/25000 (83%)]	Loss: 2.281075	Worker_id: 1
+Local Update Epoch: 0 [22400/25000 (90%)]	Loss: 2.064231	Worker_id: 1
+Local Update Epoch: 0 [24000/25000 (96%)]	Loss: 1.997835	Worker_id: 1

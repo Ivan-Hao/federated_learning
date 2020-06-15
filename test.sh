@@ -6,11 +6,28 @@ do
     touch ./result/grad_w$i.txt
 done
 
-for(( i=2; i<=16; i*=2 ))
+for (( i=5; i<=10; i*=2 ))
 do
-    $(python fedavg.py --workers=$i) 2>&1 ./result/avg_w$i.txt
-    $(python fedgrad.py --workers=$i) 2>&1 ./result/grad_w$i.txt
+    touch ./result/avg_niid_w${i}.txt
+    touch ./result/grad_niid_w${i}.txt
+    touch ./result/avg_w${i}.txt
+    touch ./result/grad_w${i}.txt
 done
 
 touch ./result/benchmark.txt
-python benchmark.py 2>&1 ./result/benchmark.txt
+
+for(( i=2; i<=16; i*=2 ))
+do
+    python fedavg.py "--workers=${i}" > ./result/avg_w${i}.txt
+    python fedgrad.py "--workers=${i}" > ./result/grad_w${i}.txt
+done
+
+for (( i=5: i<=10; i*=2 ))
+do
+    python fedavg.py "--worker=${i} --iid=0" > ./result/avg_niid_w${i}.txt
+    python fedgrad.py "--worker=${i} --iid=0" > ./result/grad_niid_w${i}.txt
+    python fedavg.py "--workers=${i}" > ./result/avg_w${i}.txt
+    python fedgrad.py "--workers=${i}" > ./result/grad_w${i}.txt
+done
+
+python benchmark.py > ./result/benchmark.txt

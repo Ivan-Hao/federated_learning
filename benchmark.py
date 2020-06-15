@@ -14,9 +14,9 @@ from torch.utils.data.dataset import random_split
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--lr', help='learning rate', default= 0.001, type=float)
-parser.add_argument('--bsize', help='batch size', default= 64, type=int)
-parser.add_argument('--testbsize', help='test batch size', default= 64, type=int)
-parser.add_argument('--epochs', help='train epochs', default= 20, type=int) 
+parser.add_argument('--bsize', help='batch size', default= 32, type=int)
+parser.add_argument('--testbsize', help='test batch size', default= 1000, type=int)
+parser.add_argument('--epochs', help='train epochs', default= 30, type=int) 
 arg = parser.parse_args()
 
 device ='cuda' if torch.cuda.is_available() else 'cpu'
@@ -57,10 +57,11 @@ if __name__ == '__main__':
     test_data = datasets.CIFAR10('./data', train=False, download=True, transform=transform)
     test_dataloader = DataLoader(test_data, batch_size=args['test_batch_size'], shuffle=True, num_workers=4)
 
-    optimizer = optim.SGD(model.parameters(), lr=args['lr'],momentum=0.9)
+    optimizer = optim.SGD(model.parameters(), lr=args['lr'], momentum=0.9)
     criterion = nn.CrossEntropyLoss()
 
     test_accuracy_list = []
+    test_loss_list = []
     train_loss_list = [] 
 
     for epoch in range(args['epochs']):
@@ -83,17 +84,23 @@ if __name__ == '__main__':
         model.eval()
         correct = 0
         total = 0
+        test_loss = 0
         with torch.no_grad():
             for data, target in test_dataloader:
                 data, target = data.to(device), target.to(device)
                 outputs = model(data)
+                test_loss += criterion(outputs, target).item()
                 _, predicted = torch.max(outputs.data, 1)
                 total += target.size(0)
                 correct += (predicted == target).sum().item()
+            test_loss /= len(test_dataloader.dataset)
 
         print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
         
         test_accuracy_list.append((100 * correct / total))
-    
+        test_loss_list.append(test_loss)
+    torch.save(model.state_dict(), './model/benchmark.pkl')
     print(test_accuracy_list)
+    print(test_loss_list)
     print(train_loss_list)
+    
