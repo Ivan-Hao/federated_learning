@@ -11,12 +11,11 @@ from torchvision import datasets, transforms
 from torch.utils.data.dataset import random_split
 # ----------------------------------------------
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--lr', help='learning rate', default= 0.001, type=float)
 parser.add_argument('--bsize', help='batch size', default= 32, type=int)
 parser.add_argument('--testbsize', help='test batch size', default= 1000, type=int)
-parser.add_argument('--epochs', help='train epochs', default= 40, type=int) 
+parser.add_argument('--epochs', help='train epochs', default= 50, type=int) 
 arg = parser.parse_args()
 
 device ='cuda' if torch.cuda.is_available() else 'cpu'
@@ -29,6 +28,7 @@ args = {
     'epochs': arg.epochs,
 }
 torch.manual_seed(1)
+
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
@@ -60,10 +60,10 @@ if __name__ == '__main__':
     optimizer = optim.SGD(model.parameters(), lr=args['lr'], momentum=0.9)
     criterion = nn.CrossEntropyLoss()
 
+    train_loss_list = []     
     test_accuracy_list = []
     test_loss_list = []
-    train_loss_list = [] 
-
+    
     for epoch in range(args['epochs']):
         model.train()
         batch_loss = []
@@ -78,7 +78,7 @@ if __name__ == '__main__':
                 print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
                     epoch, batch_idx * len(data), len(train_dataloader.dataset),
                     100. * batch_idx / len(train_dataloader), loss.item()))
-                batch_loss.append(loss.item())
+            batch_loss.append(loss.item())
         train_loss_list.append(np.average(batch_loss))
 
         model.eval()
@@ -100,7 +100,9 @@ if __name__ == '__main__':
         test_accuracy_list.append((100 * correct / total))
         test_loss_list.append(test_loss)
     torch.save(model.state_dict(), './model/benchmark.pkl')
+    
+    print(train_loss_list)
     print(test_accuracy_list)
     print(test_loss_list)
-    print(train_loss_list)
+    
     
