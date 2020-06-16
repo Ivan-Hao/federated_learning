@@ -56,15 +56,16 @@ class Net(nn.Module):
         x = self.fc3(x)
         return x
 
-def federated_grad(gradints, proportion):
-    g_avg = copy.deepcopy(gradints[0]) 
+def federated_grad(gradients, proportion):
+    g_avg = copy.deepcopy(gradients[0]) 
     div = np.sum(proportion)
     for k in g_avg.keys():
         g_avg[k] *= proportion[0]
-        for i in range(1, len(gradints)):
-            g_avg[k] += gradints[i][k]*proportion[i]
+        for i in range(1, len(gradients)):
+            g_avg[k] += gradients[i][k]*proportion[i]
         g_avg[k] = torch.div(g_avg[k], div)
     return g_avg
+'''
 
 def local_update(dataloader, model, criterion, worker_id):
 
@@ -79,14 +80,36 @@ def local_update(dataloader, model, criterion, worker_id):
         loss = criterion(output, target)
         loss.backward()
         local_loss.append(loss.item())
-        optimizer.step()
+    optimizer.step()
     
     after = copy.deepcopy(model.state_dict())
     gradient = copy.deepcopy(model.state_dict())
     for k in origin.keys():
         gradient[k] = after[k] - origin[k]
     return gradient, np.average(local_loss)
+'''
 
+def local_update(dataloader, model, criterion, worker_id):
+
+    model.train()
+    optimizer = optim.SGD(model.parameters(), lr=args['lr'], momentum=0.9)
+    gradient = copy.deepcopy(model.state_dict())
+    for k in model.state_dict().keys():
+        gradient[k] = 0
+    local_loss = [] 
+    l = len(dataloader)  
+    for data, target in dataloader:
+        optimizer.zero_grad()
+        data, target = data.to(device), target.to(device)
+        output = model(data)
+        loss = criterion(output, target)
+        local_loss.append(loss.item())
+        loss.backward()
+        parameter = model.parameters()
+        for k in model.state_dict().keys():
+            gradient[k] += copy.deepcopy(next(parameter).grad) / l
+        optimizer.step()    
+    return gradient, np.average(local_loss)
 
 if __name__ == '__main__':
     global_model = Net().to(device)
@@ -142,7 +165,7 @@ if __name__ == '__main__':
                 proportion.append(args['proportion'][idx])
             global_gradint = federated_grad(local_gradient_list, proportion)
             for k in global_weights.keys():
-                global_weights[k] += global_gradint[k]
+                global_weights[k] += args['lr']*global_gradint[k]
 
             global_model.load_state_dict(global_weights)
 
