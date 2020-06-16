@@ -56,22 +56,11 @@ class Net(nn.Module):
         x = self.fc3(x)
         return x
 
-def federated_grad(gradients, proportion):
-    g_avg = copy.deepcopy(gradients[0]) 
-    div = np.sum(proportion)
-    for k in g_avg.keys():
-        g_avg[k] *= proportion[0]
-        for i in range(1, len(gradients)):
-            g_avg[k] += gradients[i][k]*proportion[i]
-        g_avg[k] = torch.div(g_avg[k], div)
-    return g_avg
-'''
 
 def local_update(dataloader, model, criterion, worker_id):
 
     model.train()
     optimizer = optim.SGD(model.parameters(), lr=args['lr'], momentum=0.9)
-    origin = copy.deepcopy(model.state_dict())
     local_loss = []
     for data, target in dataloader:
         data, target = data.to(device), target.to(device)
@@ -80,36 +69,10 @@ def local_update(dataloader, model, criterion, worker_id):
         loss = criterion(output, target)
         loss.backward()
         local_loss.append(loss.item())
-    optimizer.step()
+        optimizer.step()
     
-    after = copy.deepcopy(model.state_dict())
-    gradient = copy.deepcopy(model.state_dict())
-    for k in origin.keys():
-        gradient[k] = after[k] - origin[k]
-    return gradient, np.average(local_loss)
-'''
+    return model.state_dict(), np.average(local_loss)
 
-def local_update(dataloader, model, criterion, worker_id):
-
-    model.train()
-    optimizer = optim.SGD(model.parameters(), lr=args['lr'], momentum=0.9)
-    gradient = copy.deepcopy(model.state_dict())
-    for k in model.state_dict().keys():
-        gradient[k] = 0
-    local_loss = [] 
-    l = len(dataloader)  
-    for data, target in dataloader:
-        optimizer.zero_grad()
-        data, target = data.to(device), target.to(device)
-        output = model(data)
-        loss = criterion(output, target)
-        local_loss.append(loss.item())
-        loss.backward()
-        parameter = model.parameters()
-        for k in model.state_dict().keys():
-            gradient[k] += copy.deepcopy(next(parameter).grad) / l
-        optimizer.step()    
-    return gradient, np.average(local_loss)
 
 if __name__ == '__main__':
     global_model = Net().to(device)
@@ -150,7 +113,6 @@ if __name__ == '__main__':
 
     for g_epoch in range(args['global_epochs']):
         global_model.train()
-        global_weights = copy.deepcopy(global_model.state_dict())
         concurrent_workers = np.random.randint(1,args['workers']+1)
         local_idx = np.random.choice(np.arange(args['workers']), concurrent_workers, replace=False)
         local_loss_list = []
@@ -159,15 +121,9 @@ if __name__ == '__main__':
         for l_epoch in range(args['local_epochs']):
             for idx in local_idx:
                 local_model = copy.deepcopy(global_model).to(device)
-                local_gradient, local_loss = local_update(workers_dataloader[idx], local_model, criterion, idx)
+                local_weights, local_loss = local_update(workers_dataloader[idx], local_model, criterion, idx)
                 local_loss_list.append(local_loss)
-                local_gradient_list.append(local_gradient)
-                proportion.append(args['proportion'][idx])
-            global_gradint = federated_grad(local_gradient_list, proportion)
-            for k in global_weights.keys():
-                global_weights[k] += args['lr']*global_gradint[k]
-
-            global_model.load_state_dict(global_weights)
+                global_model.load_state_dict(local_weights)
 
         avg_loss = np.average(local_loss_list)
         global_train_loss.append(avg_loss)
